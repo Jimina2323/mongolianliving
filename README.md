@@ -49,3 +49,22 @@
 
 </body>
 </html>
+import tkinter as tk
+
+def search_button_clicked():
+    search_query = entry.get()
+    # Perform search functionality using the search_query
+
+root = tk.Tk()
+root.title("Search Window")
+
+label = tk.Label(root, text="Enter search query:")
+label.pack()
+
+entry = tk.Entry(root)
+entry.pack()
+
+search_button = tk.Button(root, text="Search", command=search_button_clicked)
+search_button.pack()
+
+root.mainloop()
